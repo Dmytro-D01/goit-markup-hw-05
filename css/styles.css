@@ -604,10 +604,14 @@ width: calc((100% - 48px) / 3);
         height: 40px;
 }
 
+/* Subscribe */
+
 .footer-subscribe-container {
         margin-left: 80px;
         width: 453px;
         height: 100%;
+        background-color: #2e2f42;
+        width: 453px;
 }
 
 .footer-subscribe-text {
@@ -617,62 +621,53 @@ width: calc((100% - 48px) / 3);
         letter-spacing: 0.02em;
         color: #fff;
         margin-bottom: 16px;
-        
+}
+
+.footer-subscribe-form {
+        display: flex;
+        gap: 24px;
 }
 
 .footer-subscribe-email {
-        border: 1px solid #fff;
-        border-radius: 4px;
         width: 264px;
         height: 40px;
-        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-        background-color: #2e2f42;
+        border: 1px solid #fff;
+        background-color: transparent;
+        font-size: 12px;
+        line-height: 2;
+        letter-spacing: 0.04em;
         padding-left: 16px;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
         color: #fff;
 }
 
-.footer-subscribe-email:focus {
-        border: none;
+.footer-subscribe-email::placeholder {
+        color: #fff;
 }
 
 .footer-subscribe-button {
+        min-width: 165px;
+        height: 40px;
         display: flex;
+        justify-content: center;
         align-items: center;
-        flex-direction: row;
-        gap: 16px;
-        background-color: #4d5ae5;
-
-        border-radius: 4px;
-        padding: 8px 24px;
-        width: 165px;
-        height: 100%;
-        cursor: pointer;
-}
-
-.footer-subscribe-button:hover, .footer-subscribe-button:focus {
-        background-color: #404BBF;
-        transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-subscribe-button-text {
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
         font-weight: 500;
+        line-height: 1.5;
         letter-spacing: 0.04em;
-        text-align: center;
         color: #fff;
+        cursor: pointer;
+        background-color: #4d5ae5;
+        border: none;
+        border-radius: 4px;
 }
 
 .footer-subscribe-icon {
+        margin-left: 16px;
         fill: white;
-
 }
-
-.footer-subscribe-svg {
-
-}
-
-.footer-subscribe-use {
-}
-
 /* backdrop */
 .backdrop {
         position: fixed;
